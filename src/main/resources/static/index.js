@@ -10,8 +10,8 @@ function kjopBillett() {
         alert("Velg en film");
         return;
     }
-    if (antall === "") {
-        alert("Velg antall billetter");
+    if (parseInt(antall) <= 0) {
+        alert("Antall billetter må være større enn null");
         return;
     }
     if (fornavn === "") {
